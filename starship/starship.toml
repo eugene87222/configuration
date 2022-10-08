@@ -1,19 +1,19 @@
 format = """
-[\ue0b6](#821d76)\
+[ ♥](fg:red bg:#EEEEEE)\
 $time\
-[\ue0b0](bg:#bd3a58 fg:#821d76)\
+[\ue0b0](fg:#EEEEEE bg:#39065A)\
 $directory\
-[\ue0b0](fg:#bd3a58 bg:#db7b56)\
+[\ue0b0](fg:#39065A bg:#6A0572)\
 $git_branch\
 $git_status\
-[\ue0b0](fg:#db7b56 bg:#06969A)\
+[\ue0b0](fg:#6A0572 bg:#9A0F98)\
 $c\
 $golang\
 $python\
 $nodejs\
 $rust\
-[\ue0b0](fg:#06969A bg:#33658A)\
-[\ue0b0 ](fg:#33658A)\
+[\ue0b0](fg:#9A0F98 bg:#EA0599)\
+[\ue0b0 ](fg:#EA0599)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -22,12 +22,12 @@ $rust\
 # You can also replace your username with a neat symbol like \uf120 to save some space
 [username]
 show_always = true
-style_user = "bg:#821d76"
-style_root = "bg:#821d76"
+style_user = "bg:#EEEEEE"
+style_root = "bg:#EEEEEE"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#bd3a58"
+style = "bg:#39065A"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -47,40 +47,40 @@ truncation_symbol = "…/"
 
 [c]
 symbol = "\ue61e"
-style = "bg:#06969A"
+style = "bg:#9A0F98"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = "\uf418"
-style = "bg:#db7b56"
+style = "bg:#6A0572"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#db7b56"
+style = "bg:#6A0572"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = "\ue627"
-style = "bg:#06969A"
+style = "bg:#9A0F98"
 format = '[ $symbol ($version) ]($style)'
 
 [python]
 symbol = "\ue73c"
-style = "bg:#06969A"
+style = "bg:#9A0F98"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = "\ue718"
-style = "bg:#06969A"
+style = "bg:#9A0F98"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = "\ue7a8"
-style = "bg:#06969A"
+style = "bg:#9A0F98"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%H:%M:%S"
-style = "bg:#821d76"
-format = '[♥ $time ]($style)'
+style = "fg:#39065A bg:#EEEEEE"
+format = '[ $time ]($style)'

@@ -1,12 +1,12 @@
 format = """
-[\ue0b6](#9A348E)\
+[\ue0b6](#821d76)\
 $time\
-[\ue0b0](bg:#DA627D fg:#9A348E)\
+[\ue0b0](bg:#bd3a58 fg:#821d76)\
 $directory\
-[\ue0b0](fg:#DA627D bg:#FCA17D)\
+[\ue0b0](fg:#bd3a58 bg:#db7b56)\
 $git_branch\
 $git_status\
-[\ue0b0](fg:#FCA17D bg:#06969A)\
+[\ue0b0](fg:#db7b56 bg:#06969A)\
 $c\
 $golang\
 $python\
@@ -22,12 +22,12 @@ $rust\
 # You can also replace your username with a neat symbol like \uf120 to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
+style_user = "bg:#821d76"
+style_root = "bg:#821d76"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#DA627D"
+style = "bg:#bd3a58"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -52,11 +52,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = "\uf418"
-style = "bg:#FCA17D"
+style = "bg:#db7b56"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#FCA17D"
+style = "bg:#db7b56"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -82,5 +82,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%H:%M:%S"
-style = "bg:#9A348E"
+style = "bg:#821d76"
 format = '[♥ $time ]($style)'

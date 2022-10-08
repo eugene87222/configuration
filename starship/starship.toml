@@ -70,12 +70,12 @@ style = "bg:#06969A"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
-symbol = "\ue718 "
+symbol = "\ue718"
 style = "bg:#06969A"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
-symbol = "\ue7a8 "
+symbol = "\ue7a8"
 style = "bg:#06969A"
 format = '[ $symbol ($version) ]($style)'
 

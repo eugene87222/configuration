@@ -67,7 +67,7 @@ format = '[ $symbol ($version) ]($style)'
 [python]
 symbol = "\ue73c"
 style = "bg:#9A0F98"
-format = '[ $symbol ($version) ]($style)'
+format = '[ $symbol ($version) (\($virtualenv\)) ]($style)'
 
 [nodejs]
 symbol = "\ue718"

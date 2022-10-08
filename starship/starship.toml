@@ -12,8 +12,9 @@ $golang\
 $python\
 $nodejs\
 $rust\
-[\ue0b0](fg:#9A0F98 bg:#EA0599)\
-[\ue0b0 ](fg:#EA0599)\
+[\ue0b0](fg:#9A0F98 bg:#C90484)\
+$hostname\
+[\ue0b0 ](fg:#C90484)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -84,3 +85,8 @@ disabled = false
 time_format = "%H:%M:%S"
 style = "fg:#39065A bg:#EEEEEE"
 format = '[ $time ]($style)'
+
+[hostname]
+ssh_only = true
+style = "fg:#EEEEEE bg:#C90484"
+format = '[ $hostname ]($style)'

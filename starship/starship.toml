@@ -14,7 +14,8 @@ $nodejs\
 $rust\
 [\ue0b0](fg:#9A0F98 bg:#C90484)\
 $hostname\
-[\ue0b4](fg:#C90484)
+[\ue0b4](fg:#C90484)\
+$cmd_duration
 $character\
 """
 
@@ -91,6 +92,9 @@ format = '[ $time ]($style)'
 ssh_only = true
 style = "fg:#EEEEEE bg:#C90484"
 format = '[ $hostname ]($style)'
+
+[cmd_duration]
+format = "[ $duration](bold yellow) "
 
 [character]
 success_symbol = "[\uf63d](bold green)"

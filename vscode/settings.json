@@ -1,84 +1,4 @@
 {
-    // file
-    "files.autoSave": "off",
-    "files.maxMemoryForLargeFilesMB": 30000,
-    "files.eol": "\n", 
-    "files.associations": {
-        // "*.m": "matlab"
-    },
-
-    // window
-    "window.autoDetectHighContrast": false,
-
-    // extension
-    "extensions.ignoreRecommendations": true,
-
-    // editor
-    "editor.cursorBlinking": "smooth",
-    "editor.fontSize": 15,
-    "editor.quickSuggestionsDelay": 50,
-    "editor.mouseWheelZoom": true,
-    "editor.rulers": [80], 
-    "editor.hover.delay": 200, 
-    "editor.suggestSelection": "first",
-    "editor.maxTokenizationLineLength": 200000000000000,
-    "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.columnSelection": false,
-
-    // workbench
-    "workbench.editor.wrapTabs": true,
-    "workbench.panel.defaultLocation": "right",
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Monokai",
-    "workbench.colorCustomizations": {
-        "editorRuler.foreground": "#da1515", 
-        "scrollbarSlider.activeBackground": "#da1515",
-		"scrollbarSlider.background": "#da1515",
-        "scrollbarSlider.hoverBackground": "#da1515", 
-        "editor.selectionBackground": "#da1515",
-        "editor.selectionHighlightBackground": "#da1515",
-        "editor.findMatchHighlightBackground": "#da1515",
-        "editor.findMatchBackground": "#156ada"
-    },
-    "workbench.activityBar.visible": true,
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-
-    // python
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.linting.pylintArgs": [
-        "--extension-pkg-whitelist=cv2",
-        "--errors-only",
-        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
-    ],
-    "python.analysis.autoImportCompletions": false,
-    "python.analysis.extraPaths": [
-        "./*"
-    ],
-    "python.autoComplete.extraPaths": [
-        "./*"
-    ],
-    "python.languageServer": "Pylance",
-    
-    // explorer
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    
-    // terminal
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "terminal.integrated.tabs.enabled": true,
-    
-    // remote
-    "remote.SSH.remotePlatform": {
-        // "host": "linux|windows",
-    },
-
     // activitusbar
     // "activitusbar.views": [
     //     {
@@ -102,22 +22,110 @@
     //       "codicon": "extensions"
     //     }
     // ],
-    "activitusbar.combineWorkspaceSettings": true,
+    // "activitusbar.combineWorkspaceSettings": true,
+
+    "autoDocstring.docstringFormat": "sphinx",
+
+    // editor
+    "editor.cursorBlinking": "smooth",
+    "editor.fontSize": 15,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.mouseWheelZoom": true,
+    "editor.rulers": [80], 
+    "editor.hover.delay": 200, 
+    "editor.suggestSelection": "first",
+    "editor.maxTokenizationLineLength": 200000000000000,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.columnSelection": false,
+
+    // explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    // extension
+    "extensions.ignoreRecommendations": true,
+
+    // file
+    "files.autoSave": "off",
+    "files.maxMemoryForLargeFilesMB": 30000,
+    "files.eol": "\n", 
+    "files.associations": {
+        "*.m": "matlab",
+        "*.log.*": "log"
+    },
+
+    // python
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=cv2",
+        "--errors-only",
+        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*"
+    ],
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.extraPaths": [
+        "./*"
+    ],
+    "python.autoComplete.extraPaths": [
+        "./*"
+    ],
+    "python.languageServer": "Pylance",
+
+    // remote
+    "remote.SSH.remotePlatform": {
+        "140.113.203.50": "linux",
+        "140.113.86.72": "linux",
+        "140.113.203.55": "linux",
+        "GCP": "linux",
+        "eating": "linux"
+    },
+
+    // terminal
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.tabs.enabled": true,
+
+    // window
+    "window.autoDetectHighContrast": false,
+
+    // workbench
+    "workbench.editor.wrapTabs": true,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#da1515", 
+        "scrollbarSlider.activeBackground": "#da1515",
+		"scrollbarSlider.background": "#da1515",
+        "scrollbarSlider.hoverBackground": "#da1515", 
+        "editor.selectionBackground": "#da1515",
+        "editor.selectionHighlightBackground": "#da1515",
+        "editor.findMatchHighlightBackground": "#da1515",
+        "editor.findMatchBackground": "#156ada"
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
 
     // other
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
 
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     
     "[python]": {
         "editor.bracketPairColorization.enabled": false,
-    },
+        "editor.formatOnType": true,
+    }
 }

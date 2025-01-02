@@ -60,7 +60,11 @@
         "--extension-pkg-whitelist=cv2",
         "--errors-only",
         "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
-        "--disable=consider-using-enumerate"
+        "--disable=consider-using-enumerate",
+        "--disable=consider-using-dict-items",
+        "--disable=line-too-long",
+        "--disable=missing-function-docstring",
+        "--disable=missing-module-docstring"
     ],
     "python.defaultInterpreterPath": "C:\\Program Files\\Python310\\python.exe",
     "python.languageServer": "Pylance",

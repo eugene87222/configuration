@@ -1,47 +1,48 @@
 {
-    // activitusbar
-    // "activitusbar.views": [
-    //     {
-    //       "name": "search",
-    //       "codicon": "search"
-    //     },
-    //     {
-    //       "name": "explorer",
-    //       "codicon": "folder"
-    //     },
-    //     {
-    //         "name": "remote",
-    //         "codicon": "remote-explorer"
-    //     },
-    //     {
-    //       "name": "scm",
-    //       "codicon": "source-control"
-    //     },
-    //     {
-    //       "name": "extensions",
-    //       "codicon": "extensions"
-    //     }
-    // ],
-    // "activitusbar.combineWorkspaceSettings": true,
-
     "autoDocstring.docstringFormat": "sphinx",
+
+    "black-formatter.args": [
+        "--skip-string-normalization"
+    ],
+
+    "cody.suggestions.mode": "off",
+
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 
     // editor
     "editor.accessibilitySupport": "off",
+    "editor.columnSelection": false,
     "editor.cursorBlinking": "smooth",
     "editor.fontSize": 15,
-    "editor.quickSuggestionsDelay": 50,
-    "editor.mouseWheelZoom": true,
-    "editor.rulers": [80], 
-    "editor.hover.delay": 200, 
-    "editor.suggestSelection": "first",
+    "editor.hover.delay": 200,
+    "editor.inlineSuggest.suppressSuggestions": true,
     // "editor.maxTokenizationLineLength": 200000000000000,
+    "editor.mouseWheelZoom": true,
+    "editor.quickSuggestionsDelay": 50,
+    "editor.rulers": [80],
+    "editor.suggestSelection": "first",
+    "editor.stickyScroll.maxLineCount": 1,
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.columnSelection": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
 
     // explorer
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
 
     // extension
     "extensions.ignoreRecommendations": true,
@@ -49,7 +50,7 @@
     // file
     "files.autoSave": "off",
     "files.maxMemoryForLargeFilesMB": 30000,
-    "files.eol": "\n", 
+    "files.eol": "\n",
     "files.associations": {
         "*.m": "matlab",
         "*.log.*": "log"
@@ -57,13 +58,13 @@
 
     // python
     "pylint.args": [
-        "--extension-pkg-whitelist=cv2",
-        "--errors-only",
-        "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
-        "--disable=consider-using-enumerate"
+        // "--extension-pkg-whitelist=cv2",
+        // "--generated-members=numpy.* ,torch.* ,cv2.* , cv.*",
+        // "--disable=consider-using-enumerate",
+        "--errors-only"
     ],
-    "python.defaultInterpreterPath": "C:\\Program Files\\Python310\\python.exe",
-    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "C:\\Python312\\python.exe",
+    "python.languageServer": "Default",
     "python.analysis.autoImportCompletions": false,
     "python.analysis.extraPaths": [
         "./*"
@@ -82,12 +83,16 @@
         "rpi4": "linux"
     },
 
+    "security.workspace.trust.untrustedFiles": "open",
+
     // terminal
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.fontFamily": "MesloLGS NF",
     "terminal.integrated.tabs.enabled": true,
+
+    "vscode-pokemon.pokemonSize": "small",
 
     // window
     "window.autoDetectHighContrast": false,
@@ -104,8 +109,8 @@
 		"scrollbarSlider.background": "#da1515",
         "scrollbarSlider.hoverBackground": "#da1515",
         "editor.selectionBackground": "#da1515",
-        "editor.selectionHighlightBackground": "#da1515",
-        "editor.findMatchHighlightBackground": "#da1515",
+        "editor.selectionHighlightBackground": "#da15155a",
+        "editor.findMatchHighlightBackground": "#da15155a",
         "editor.findMatchBackground": "#156ada"
     },
     "workbench.editorAssociations": {
@@ -116,24 +121,17 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-
     "[python]": {
         "editor.bracketPairColorization.enabled": false,
         "editor.formatOnType": true,
     },
-    "black-formatter.args": [
-        "--skip-string-normalization"
-    ],
-    "editor.stickyScroll.maxLineCount": 1,
-    "security.allowedUNCHosts": [
-        "wsl.localhost"
-    ]
+    "[yaml]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    }
 }
